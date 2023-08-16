@@ -1,0 +1,24 @@
+#import = ["/home/<user>/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+
+[cursor]
+style = "Block"
+unfocused_hollow = true
+
+[font]
+size = 13
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+decorations = "none"
+
+[window.padding]
+x = 5
+y = 5
