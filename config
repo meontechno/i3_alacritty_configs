@@ -199,10 +199,17 @@ bindsym Mod1+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command i3status --config /home/kuser/.i3status.conf
 }
+
 
 for_window [class="^.*"] border pixel 3
 
 # Window border color
 client.focused	#458588 #458588 #000000
+
+# Secondary monitory rotation
+exec_always xrandr --output DP-4 --rotate left
+
+# Wallpaper setup
+exec_always nitrogen --restore
